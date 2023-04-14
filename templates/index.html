@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ url_for('static', filename='img/favicon.png')}}" rel="icon">
-  <link href="{{ url_for('static', filename='img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{ url_for('static', filename='images/favicon.png')}}" rel="icon">
+  <link href="{{ url_for('static', filename='images/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -45,7 +45,7 @@
       <div class="logo">
         <h1 class="text-light"><a href="home"><span>TryVirtually</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <!-- <a href="index.html"><img src="assets/images/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
@@ -84,7 +84,7 @@
           -->
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="{{ url_for('static', filename='img/hero-img.svg')}}" class="img-fluid animated" alt="">
+          <img src="{{ url_for('static', filename='images/hero-img.svg')}}" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -99,7 +99,8 @@
 
         <div class="row justify-content-between">
           <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-            <img src="{{ url_for('static', filename='img/about-img.svg')}}" class="img-fluid" alt="" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='images/about-img.svg')}}" class="img-fluid" alt=""
+              data-aos="zoom-in">
           </div>
           <div class="col-lg-6 pt-5 pt-lg-0">
             <h3 data-aos="fade-up">Need</h3>
@@ -123,40 +124,33 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-           <h2>Services</h2>
-          <p>Check out the great services we offer</p>
+           <h2>Model</h2>
+          <p>Our model consists of following modules</p>
         </div>
 
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-md-8 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+              <h4 class="title"><a href="">Semantic Generation Module</a></h4>
+              <p class="description">Generates the mask of the body parts and the mask of the warped clothing regions via semantic segmentation</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-md-8 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+              <h4 class="title"><a href="">Clothes Wraping Module</a></h4>
+              <p class="description">Warp target clothing image according to the warped clothing mask</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-md-8 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+              <h4 class="title"><a href="">Content Fusion Module</a></h4>
+              <p class="description">Integrates the information from previous modules to adaptively determine the generation or
+                preservation of the distinct human parts in output synthesized image</p>
             </div>
           </div>
 
@@ -179,7 +173,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="member">
-              <img src="{{ url_for('static', filename='img/team/team-1.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='images/team/team-1.jpg')}}" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Rehan Shaikh</h4>
@@ -197,7 +191,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="member">
-              <img src="{{ url_for('static', filename='img/team/team-2.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='images/team/team-2.jpg')}}" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Eshani Sawant</h4>
@@ -215,7 +209,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="member">
-              <img src="{{ url_for('static', filename='img/team/team-3.png')}}" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='images/team/team-3.png')}}" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Tabish Momin</h4>
@@ -233,7 +227,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="member">
-              <img src="{{ url_for('static', filename='img/team/team-4.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='images/team/team-4.jpg')}}" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Yashashree Deshmukh</h4>
@@ -277,13 +271,13 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>support@tryvirtually.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+91 3440575967</p>
               </div>
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.6694342833944!2d73.12548141484996!3d18.9902009871372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e866de88667f%3A0xc1c5d5badc610f5f!2sPillai%20College%20of%20Engineering%2C%20New%20Panvel%20(Autonomous)!5e0!3m2!1sen!2sin!4v1681200445536!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
@@ -334,7 +328,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-8 footer-contact">
             <h3>TryVirtually</h3>
             <p>
               Pillai College of Engineering <br>
@@ -345,7 +339,7 @@
             </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-8 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
@@ -355,15 +349,25 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-8 footer-links">
             <h4>About our Project</h4>
             <p>Virtual try-on means that consumers try on cloth virtually using their phones or tablets.</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="#" class="twitter"><i class="bx bxl-twitter"><img
+                    src="{{ url_for('static', filename='images/twitter_logo.png')}}" height="30px"
+                    width="30px"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"><img
+                    src="{{ url_for('static', filename='images/facebook_logo.png')}}" height="30px"
+                    width="30px"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"><img
+                    src="{{ url_for('static', filename='images/instagram_logo.png')}}" height="30px"
+                    width="30px"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"><img
+                    src="{{ url_for('static', filename='images/whatsapp_logo.png')}}" height="30px"
+                    width="30px"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"><img
+                    src="{{ url_for('static', filename='images/linkedin_logo.png')}}" height="30px"
+                    width="30px"></i></a>
             </div>
           </div>
 
